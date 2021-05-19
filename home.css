@@ -1,0 +1,448 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+#navbar{
+    display:flex;
+    align-items: center;
+}
+ 
+/* Navigation bar: logo and image  */
+#logo{
+    margin: 1px 30px;
+}
+#logo img{
+    height: 70px;
+    margin: 20px 4px;
+}
+
+/* Navigation Bar : List Styling  */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+    }
+    
+    #navbar ul li a{
+        color:white;
+       display: block;
+       padding: 3px 24px;
+       margin-top: 15px;
+       border-radius: 20px;
+       text-decoration: none;
+      }
+       /* .item1{
+         margin-left: 210px;
+
+      } */
+      
+
+#navbar ul li  a:hover{
+    color: white;
+    background-color: rgba(64, 224, 208, 0.452);
+}
+     #navbar ul li:last-of-type > a{
+  margin-left:210px;
+ }
+
+
+
+
+/* Navbar bar elements brightning */
+#navbar::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.7);
+}
+#navbar>*{
+    position: relative;
+    z-index: 2;
+}
+/*DROPDOWn MENU */
+ .dropdown {
+ float: left; 
+    overflow: hidden;  
+   
+} 
+
+.dropdown .dropbtn {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+.dropdown:hover .dropbtn{
+  color: white;
+  background-color: rgba(64, 224, 208, 0.452);
+ 
+   
+
+ }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 205px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Normal Body Utility Css */
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1rem;
+    font-weight:normal;
+    line-height:1.5;
+    color:#333;
+    overflow-x:hidden;
+  }
+  /* Section 1 css */
+  #home{
+    height:100vh;
+    display:flex;
+    align-items:top;
+    color:#fff;
+  }
+  /* More section 1 css */
+.container{
+    max-width:960px;
+     padding-left:1rem; 
+     padding-right:1rem; 
+    margin:auto;
+    text-align:center;
+  }
+  /* video css setting */
+ .myvideo{
+    position:absolute;
+    top:0;
+    left:0;
+   
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+  }
+  
+  .myvideo video{
+    min-height:100%;
+    min-width:100%;
+  }
+  /* overlay css */
+  .header-overlay{
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:1;
+    background:rgba(0, 0, 0,0.8);
+    opacity:0.85;
+  }
+  
+  .header-content{
+    z-index:2;
+  }
+
+  /* heading and para css */
+  .header-content{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+  }
+  .header-content h1{
+    display: block;
+    font-size:50px;
+   margin-bottom: 0;
+    
+  }
+  
+  .header-content p{
+    font-size:1.5rem;
+    display:block;
+     padding-top: 2rem; 
+    text-align: justify;
+    font-weight: 600;
+ 
+  }
+ /* Animation of para css */
+   @keyframes quick { 
+    from {color:rgb(0 0 0 /2%);}
+      to{color: white;}
+  } 
+ 
+ 
+  .leftfloat {
+      height: 100%;
+      width:100%;
+     animation-name: quick;
+      animation-duration: 6s;
+     } 
+
+
+/* second section css :( */
+.box2{
+  border:2px solid white;
+  margin:4px;
+  padding: auto;
+  height:650px;
+  background-color:whitesmoke;
+  color: #333;
+}
+.h-first{
+  margin-left: 470px;
+  font-family: fantasy ;
+  font-size: 40px;
+ 
+}
+.h-second{
+  margin-left: 470px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#slider{
+  margin-left: 286px;
+  margin-right: 286px;
+  overflow: hidden;
+}
+#slider figure{
+  position: relative;
+  
+  width: 500%;
+   margin: 0;
+  left: 0;
+  animation: 14s slider infinite;
+}
+#slider figure img{
+  width:20%;
+  float:left;
+}
+@keyframes slider{
+  0%{left: 0;}
+  20%{left: 0;}
+  25%{left: -100%;}
+  45%{left: -100%;}
+  50%{left: -200%;}
+  70%{left: -200%;}
+  75%{left: -300%;}
+  95%{left: -300%;}
+  100%{left: -400%;}
+}
+
+/* section 3 pet css */
+
+.box3{
+  border:2px solid black;
+  /* margin:4px; */
+  padding: auto;
+  height:500px;
+  background-color: black;
+  color:white;
+}
+ 
+#pet{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pettext{
+  padding-left: 90px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.heading{
+  font-size: 40px;
+  padding-bottom: 60px;
+}
+.lines{
+  font-size: 20px;
+} 
+
+/* Section 4 discover experiences css */
+
+
+#reviews{
+  /* border:2px solid brown; */
+  /* margin:4px; */
+  
+  height:450px;
+  background-color:  rgb(88, 189, 189);
+  color:white;
+  
+}
+.real{
+  display: flex;
+  align-items: center;
+}
+#reviews .boxa{
+  border:6px solid teal;
+  height: 200px;
+  display: block;
+  margin: 8px;
+padding: 20px;
+background-color: #ddd;
+color: #333;
+font-size: 20px;
+box-shadow: 0 10px 20px -6px #000;
+} 
+
+#reviews .boxb{
+  border:6px solid teal;
+  height: 200px;
+  display: block;
+  margin: 8px;
+padding: 20px;
+background-color: #ddd;
+color: #333;
+font-size: 20px;
+box-shadow: 0 10px 20px -6px #000;
+
+} 
+#reviews .boxc{
+  border:6px solid teal;
+  height: 200px;
+  display: block;
+  margin: 8px;
+  padding: 20px;
+   /* margin-right: 50px; */
+background-color: #ddd;
+color: #333;
+font-size: 20px;
+box-shadow: 0 10px 20px -6px #000;
+} 
+.first-h{
+  display: block;
+  font-size: 40px;
+  margin-bottom: 60px;
+  margin-left: 420px;
+  
+}
+
+
+/* HOSTING SECTION  */
+#host{
+  width: 100%;
+  height: 500px;
+  background-color: rgba(65, 61, 61, 0.911);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child{
+  width: 900px;
+  height: 400px;
+  background-color:burlywood;
+ background-image: linear-gradient(295deg, rgba(255,255,255,0.9) 50%, transparent 50%), url(https://images.pexels.com/photos/238385/pexels-photo-238385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+ background-size: 100% 100%;
+ box-shadow: 0 10px 20px -6px #000;
+}
+.text67 h3 {
+  padding-left: 550px;
+  padding-bottom: 30px;
+  font-size: 40px;
+
+}
+.text67 p {
+  padding-left: 530px;
+  font-size: 35px;
+  color: rgb(70, 70, 189);
+
+}
+.btn{
+  padding-left: 650px;
+  padding-top: 20px;
+  
+ 
+}
+.click{font-size: 20px;
+  color: #333;
+  background-color: aliceblue;
+  border-radius: 4px;
+  box-shadow: 0 10px 10px -6px #000; 
+}
+/* FOOTER CSS */
+.inner-footer{
+  /* margin: 0;
+  padding: 0; */
+  background-color: #333;
+}
+.quicklinks{
+  display: flex;
+  /* width: 560px; */
+  height: 50px;
+  margin: auto; 
+  padding-top: 20px;
+}
+.quicklinks ul{
+  display: flex;
+  
+}
+.quickitems{
+  list-style: none;
+}
+.quickitems a{
+  text-decoration: none;
+ 
+   padding-left: 30px; 
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+.quickitems a:hover{
+  color: teal;
+}
+.outer-footer{
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  background-color: black;
+}
+.quicklinks ul li:first-of-type > a{
+  padding-left: 200px;
+}
