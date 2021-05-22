@@ -1,0 +1,431 @@
+{%  load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAWA MAHAL| Travel</title>
+    <link rel="stylesheet" href="{% static 'enter1/images/new.css' %}"/>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-------------------------------------------------------------------------------------------------------------->
+    <div class="header">
+      <h1 class="app" id="hq">HAWA MAHAL</h1>
+      <div class="containr">
+        <div class="navbar">
+          <div class="logo">
+            <img src="{%  static 'enter1/images/hawa1.jpeg' %}" width="125px" />
+          </div>
+        </div>
+        <!-------------------------------------------adding poster------------------------------------------------------------------->
+        <div class="row">
+          <div class="col_2">
+            <h1>ABOUT THE PLACE</h1>
+            <p>
+              Hawa Mahal ("The Palace of Winds" or "The Palace of Breeze") is a
+              palace in Jaipur, India approximately 300 kilometers from the
+              capital city of Delhi. Built from red and pink sandstone, the
+              palace sits on the edge of the City Palace, Jaipur, and extends to
+              the Zenana, or women's chambers. The structure was built in 1799
+              by Maharaja Sawai Pratap Singh, the grandson of Maharaja Sawai Jai
+              Singh, who was the founder of Jaipur.He was so inspired by the
+              unique structure of Khetri Mahal that he built this grand and
+              historical palace. It was designed by Lal Chand Ustad. Its five
+              floor exterior is akin to honeycomb with its 953 small windows
+              called Jharokhas decorated with intricate latticework. The
+              original intent of the lattice design was to allow royal ladies to
+              observe everyday life and festivals celebrated in the street below
+              without being seen, since they had to obey the strict rules of
+              "purdah", which forbade them from appearing in public without face
+              coverings. This architectural feature also allowed cool air from
+              the Venturi effect to pass through, thus making the whole area
+              more pleasant during the high temperatures in summer. Many people
+              see the Hawa Mahal from the street view and think it is the front
+              of the palace, but it is the back.[3] In 2006, renovation works on
+              the Mahal were undertaken, after a gap of 50 years, to give a
+              facelift to the monument at an estimated cost of Rs 4.568 million.
+              The corporate sector lent a hand to preserve the historical
+              monuments of Jaipur and the Unit Trust of India has adopted Hawa
+              Mahal to maintain it. The palace is an extended part of a huge
+              complex. The stone-carved screens, small casements, and arched
+              roofs are some of the features of this popular tourist spot. The
+              monument also has delicately modeled hanging cornices.
+
+              <a href="#" class="btn"><span>Get More &#8594;</span></a>
+            </p>
+          </div>
+
+          <div class="col_2">
+            <img src="{%  static 'enter1/images/hawamahal.jpeg' %}" />
+          </div>
+        </div>
+      </div>
+      <!-------------------------------------------Image Gallery---------------------------------------------->
+      <div class="categories">
+        <div class="small_cont">
+          <div class="carousel" data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell"><img src="{%  static 'enter1/images/rajes1.jpg' %}" /></div>
+            <div class="carousel-cell"><img src="{%  static 'enter1/images/rajes2.jpeg' %}" /></div>
+            <div class="carousel-cell"><img src="{%  static 'enter1/images/rajes3.jpg' %}" /></div>
+            <div class="carousel-cell"><img src="{%  static 'enter1/images/rajes4.jpg' %}" /></div>
+            <div class="carousel-cell"><img src="{%  static 'enter1/images/rajes5.jpg' %}" /></div>
+            <div class="carousel-cell"><img src="{%  static 'enter1/images/rajes6.jpg' %}" /></div>
+            <div class="carousel-cell"><img src="{%  static 'enter1/images/rajes7.jpg' %}" /></div>
+            <div class="carousel-cell"><img src="{%  static 'enter1/images/rajes8.jpg' %}" /></div>
+            <div class="carousel-cell"><img src="{%  static 'enter1/images/rajes9.jpg' %}" /></div>
+          </div>
+        </div>
+      </div>
+      <!-----------------------------------------Map-------------------------------------------------->
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.3556860342237!2d75.8267438!3d26.923936299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db14b1bd30ba5%3A0x860e5d531eccb20c!2sHawa%20Mahal!5e0!3m2!1sen!2sin!4v1621177572422!5m2!1sen!2sin"
+          width="1000"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <!-----------------------------------------------Travel Cards------------------------------------------------------>
+      </div>
+      <section class="container-boxes">
+        <div class="box1">
+          <div class="icon">
+            <a href=""><i class="fas fa-book"></i></a>
+          </div>
+          <div class="text">
+            <a href="">
+              <h3>Book Now</h3>
+              <p>Book Now And Fly Around The World With Qatar Airways.</p>
+            </a>
+          </div>
+        </div>
+        <div class="box1">
+          <div class="icon">
+            <a href=""><i class="fas fa-plane"></i></a>
+          </div>
+          <div class="text">
+            <a href="">
+              <h3>Travel</h3>
+              <p>Travel With Us And Explore The World Of Adventures.</p>
+            </a>
+          </div>
+        </div>
+        <div class="box1">
+          <div class="icon">
+            <a href=""><i class="fas fa-address-card"></i></a>
+          </div>
+          <div class="text">
+            <a href="">
+              <h3>Teams</h3>
+              <p>Become a member,become family.Teamwork is everything.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------------------------------------------------------------------------------------------------------------>
+      <!--------------------------------------------------Tables----------------------------------------------------->
+      <h2 class="title">ROUTES</h2>
+      <div class="table">
+        <div class="tb1">
+          <h2>BY FLIGHTS</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Flights</th>
+                <th>Time</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>f1</td>
+                <td>8:00PM</td>
+                <td>$40000</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>f2</td>
+                <td>7:00PM</td>
+                <td>$90000</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>f3</td>
+                <td>6:00PM</td>
+                <td>$11000</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>f4</td>
+                <td>5:00PM</td>
+                <td>$90000</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>f5</td>
+                <td>11:00PM</td>
+                <td>$30000</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <th colspan="4">TOTAL DISTANCE:100000KM</th>
+            </tfoot>
+          </table>
+        </div>
+        <!------------------------------------------------------------------------------------------------------>
+        <div class="tb2">
+          <table>
+            <h2>BY TRAIN</h2>
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Trains</th>
+                <th>Time</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>t2</td>
+                <td>8:00PM</td>
+                <td>$40000</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>t2</td>
+                <td>7:00PM</td>
+                <td>$90000</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>t3</td>
+                <td>6:00PM</td>
+                <td>$11000</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>t4</td>
+                <td>5:00PM</td>
+                <td>$90000</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>t5</td>
+                <td>11:00PM</td>
+                <td>$30000</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <th colspan="4">TOTAL DISTANCE:100000KM</th>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <!-----------------------------------------------Hotels Images----------------------------------------------->
+
+      <h2 class="title">HOTELS</h2>
+      <div class="container">
+        <div class="box">
+          <div class="imgBox">
+            <img src="{%  static 'enter1/images/hawa1.jpeg' %}" />
+          </div>
+          <div class="content">
+            <div>
+              <h4>Jaipur Haveli</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p>$500.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBox">
+            <img src="{%  static 'enter1/images/hawa2.jpeg' %}" />
+          </div>
+          <div class="content">
+            <div>
+              <h4>Zostel Jaipur</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <p>$500.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBox">
+            <img src="{%  static 'enter1/images/hawa3.jpeg' %}" />
+          </div>
+          <div class="content">
+            <div>
+              <h4>Samode Haveli</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p>$500.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBox">
+            <img src="{%  static 'enter1/images/hawa4.jpeg' %}" />
+          </div>
+          <div class="content">
+            <div>
+              <h4>Rawla Mrignayani Palace</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p>$500.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------------------Hotels Details----------------------------------------------------->
+      <h2 class="title">HOTELS OVERVIEW</h2>
+      <div class="row">
+        <div class="col_4">
+          <img src="{%  static 'enter1/images/hawa4.jpeg' %}" />
+          <h4>Rawla Mrignayani Hotel</h4>
+          <p><b>$500.00</b></p>
+          <p>
+            <em
+              >Rawla Mrignayani is a family run heritage property that has been
+              restored from a 300 Years old Natwara Haveli built by “ Rao Kripa
+              Ram” of Chaksu, the Prime Minister of then Jaipur State. It was
+              later taken over by the rulers of Jaipur and the Haveli was given
+              as a grant to the nobles of Karnot, descendents of “Veer Durga Das
+              Rathore”.</em
+            >
+          </p>
+        </div>
+        <div class="col_4">
+          <img src="{%  static 'enter1/images/hawa2.jpeg' %}" />
+          <h4>Zostel Jaipur</h4>
+          <p><b>$800.00</b></p>
+          <p>
+            <em
+              >Jaipur serves as a gateway into the most colourful state of
+              India, Rajasthan. The capital city packs all aspects that the
+              state is known for within itself. Jaipur has a deep connection
+              with its historic past which is visible in its preservation of the
+              walled Pink City, which is what Jaipur is essentially famous
+              for</em
+            >
+          </p>
+        </div>
+        <div class="col_4">
+          <img src="{%  static 'enter1/images/hawa4.jpeg' %}" />
+          <h4>Samode Haveli</h4>
+          <p><b>$400.00</b></p>
+          <p>
+            <em
+              >Samode Haveli Hotel is considered a boutique hotel. The
+              guestrooms feature antique furnishings with modern equipment like
+              satellite TVs. The dining hall serves the finest Rajasthani
+              cuisine, and after dinner, there is a live traditional song and
+              dance show. Retire to the lounge or the bar for a few post-meal
+              beverages.
+            </em>
+          </p>
+        </div>
+      </div>
+
+      <!------------------------------------------------Food Info---------------------------------------------------------->
+      <div class="testimonial">
+        <h2 class="title">FOOD COLUMN</h2>
+        <div class="small_cont">
+          <div class="row">
+            <div class="col_3">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                Pyaaz ki kachori originated in Jodhpur and is now eaten all over
+                the state, mainly as a breakfast snack. They are flaky,
+                deep-fried breads made from plain flour and stuffed with a spicy
+                onion mixture with spices like fennel, cumin, turmeric and
+                chilli powder. Usually, kachoris are served with coriander &
+                mint and date & tamarind chutney.
+              </p>
+
+              <img src="{% static 'enter1/images/raj.jpeg' %}" />
+              <h3>Onion kachori</h3>
+            </div>
+            <div class="col_3">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                One of the most popular Rajasthani dishes, ker is a wild berry
+                that is tangy and peppery while sangri is a type of long bean
+                grown abundantly in the desert areas of Jaisalmer and Barmer.
+                Sangri is a mainstay during drought, when little else is
+                available as it is 53% protein.They ate this wonderful
+                concoction with their bajra rotis.
+              </p>
+
+              <img src="{% static 'enter1/images/raj1.jpeg' %}" />
+              <h3>Ker sangri</h3>
+            </div>
+            <div class="col_3">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                This is the state’s classic signature dish. Baati is hard,
+                unleavened bread cooked in the desert areas of Rajasthan. Baati
+                is prized mainly for its long shelf life, plus it requires
+                hardly any water for its preparation. It is always eaten with
+                dal (lentil curry). The dal is made of lentils while churma is a
+                coarsely ground wheat mixture crushed
+              </p>
+
+              <img src="{% static 'enter1/images/raj2.jpeg' %}" />
+              <h3>Dal baati churma</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>

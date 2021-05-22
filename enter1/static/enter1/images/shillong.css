@@ -1,0 +1,280 @@
+*
+{ padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+body
+{ font-family:verdana;
+  background:#eee;
+}
+
+#para1
+{ font-family:algerian;
+}
+
+.banner-area
+{ 
+ height:100vh;
+ background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+ url("shillong.jpg");
+ background-size:cover;
+} 
+
+table.nav
+{ 
+  background-color:rgba(0,0,0,0);
+  width:90%;
+  height:10%;
+  font-size:25px;
+}
+
+a.nav1
+{ color:white;
+  font-family:Cooper;
+}
+
+.nav1:hover
+{ background-color:white;
+  color:black;
+}
+
+.content-area
+{ height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.map
+{ width:100%;
+  height:200px;
+}
+
+.mapimg
+{ height:150px;
+  width:70%;
+  margin-top:5px;
+}
+
+.mapimg:hover
+{ transform:scale(2);
+}
+
+
+#table1
+{ padding:5px;
+  border-spacing:20px;
+}
+
+table.tickets
+{ margin-left:auto;
+  margin-right:auto;
+  border-spacing:50px;
+}
+
+table.a
+{ width:100%;
+  justify-content:center;
+  border:2px solid black;
+  text-align:center;
+}
+
+tr.ahead
+{ background-color:#357EC7;
+  height:40px;
+}
+
+tr.b
+{ background-color:#E6E6FA;
+  height:40px;
+}
+tr.b:hover
+{ transform:scale(1.2);
+}
+
+tr.c
+{ background-color:#B0C4DE;
+   height:40px;
+}
+tr.c:hover
+{ transform:scale(1.2);
+}
+
+.content
+{ position:relative;
+  animation:mymove 5s 1;
+  animation-timing-function:ease;
+  text-decoration:underline;
+  text-decoration-color:white;
+}
+
+@keyframes mymove
+{     from { left:1000px;}
+       to{ left: 0px;}    
+}
+  
+.content h1
+{ font-size:80px;
+  color:#fff;
+  font-family:algerian;
+  padding-left:70px;
+}
+
+.content p
+{ font-size:50px;
+  color:#ddd;
+  padding-left:90px;
+}  
+
+.content:hover
+{ transform:scale(1.3);
+}
+
+.tabhead
+{ width:90%;
+  background:#ADD8E6;
+  margin-top:50px;
+  border-radius:9px;
+  justify-content:center;
+  height:70px;
+  text-align:center;
+}
+
+.tabhead:hover
+{ transform:scale(1.3);
+}
+
+.head
+{ width:100%;
+  padding:50px 0px;
+  background:#F5F5F5;
+  margin-top:50px;
+  border-radius:10px;
+  justify-content:center;
+  font-family:Bauhaus93;
+  text-align:center;
+}
+
+.head:hover
+{ transform:rotateZ(350deg);
+}
+
+.cab
+{  width:88%;
+   height:100%;
+   margin:20px 40px;
+   background:#87AFC7;
+   color:white;
+   border-radius:5px;
+}
+
+.container
+{ width:70%;
+  margin:50px auto;
+  padding:10px;
+  justify-content:center;
+}
+
+.container .box
+{ justify-content:center;
+  padding:50px;
+  background:#fff;
+  margin-top:30px;
+  border-radius:10px;
+  box-shadow:0 0 10px -3px rgba(0,0,0,0.1);
+}
+
+.container .box:hover
+{ transform:scale(1.3);
+  box-shadow:2px 2px 2px #000;
+  z-index:2;
+}
+  
+.cont
+{
+  padding:10px;
+  background:#ddd;
+  margin:100px auto;
+  display:flex;
+  justify-content:center;
+}
+
+.vbox
+{  width:20%;
+   height:400px;
+   margin:0px 10px;
+   transition:1s;
+   background:#87AFC7;
+   border-radius:20px;
+   justify-content:center;
+}
+
+.vbox:hover
+{ transform:scale(1.3);
+  box-shadow:2px 2px 2px #000;
+  z-index:2;
+}
+
+h3
+{ font-size:15px;
+}
+
+.vbox1
+{ 
+  height:30px;
+  padding:5px;
+  margin-top:10px ;
+  margin-right:5px;
+  margin-left:25px;
+  background:#D1D0CE;
+  text-align:center;
+  border-radius:10px;
+}
+ 
+.checked {
+  color: orange;
+}
+
+.wave {
+  float: left;
+  margin: 20px;
+  transform-origin: center -20px;
+}
+
+.wave:hover {
+  transform:scale(1.2);
+}
+
+.wave img {
+    border: 5px solid #f8f8f8;
+    display: block;
+    width: 250px;
+    height: 200px;
+}
+
+.wave h3 {
+    text-align: center;
+}
+
+.contfood
+{ height:60%;
+  padding:30px;
+  background:#ddd;
+  margin-left:500px auto;
+  margin-right:500px auto;
+  margin-bottom:60px;
+  display:flex;
+  justify-content:center;
+}
+
+.bluebox
+{  width:25%;
+   height:100%;
+   margin:20px 40px;
+   background:#87AFC7;
+}
+  
+.bluebox:hover
+{ box-shadow:4px 4px 4px #000;
+}

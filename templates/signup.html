@@ -1,0 +1,54 @@
+
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'enter1/images/signup.css' %}">
+</head>
+<body>
+  <div class="signup-box">
+     <form method="POST" enctype="multipart/form-data" class="form" id="form">
+         {%  csrf_token %}
+         <h1>Signup</h1>
+         <h4>It's free and quick</h4>
+         <div class=form-control">
+         {{ form }}
+             <div id="subbutton">
+      <button  class="btn btn-lg btn-warning">Submit</button>
+             </div>
+         </div>
+        </form>
+        <p>By clicking the Sign Up button, you agree to aur <br>
+            <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> </p>
+
+    <p class="para-2">Already have an account? <a href="{% url 'login_url'%}>Login Here</a></p>
+  </div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
